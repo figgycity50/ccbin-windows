@@ -1,0 +1,11 @@
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.exe.config
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.exe
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.pdb
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.csprojResolveAssemblyReference.cache
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.Form1.resources
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.Properties.Resources.resources
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.csproj.GenerateResource.Cache
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.exe
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.pdb
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\Newtonsoft.Json.dll
+c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\Newtonsoft.Json.xml
