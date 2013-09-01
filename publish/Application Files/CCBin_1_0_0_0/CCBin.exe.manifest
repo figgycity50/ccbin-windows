@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CCBin.exe" version="1.0.0.0" publicKeyToken="35255882d74c51be" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ccbin_c.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CCBin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CCBin.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CCBin.exe" size="14336">
+      <assemblyIdentity name="CCBin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tktrYYO78TNYUu5gTSo5Ms0kX9gH4XEO/YWaqTJZLok=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="430592">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u53unmMjK4CyzIDxYzpvxB7ZFZqvOeNj7VBa2/vso08=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CCBin.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ccbin_c.ico" size="1150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s2+aJvHkLkR16ozQX5lA+xCKvW2JDvmswYgTOY0rUu4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP1\gbroo_000" issuerKeyHash="c4e275d8c5c0a374a51afcc62733e67a442a16d2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l7pm9NlhlIGlCEe+PdWDbeb8uZLZq2FSzs9ssf0EL94=</DigestValue></Reference></SignedInfo><SignatureValue>1htLVL81TlVRRmOXWj5v3xoes4m+p72hPtwVwDFow1Rt7G+cKKkK1HU+g1uYU2+lgmMlbyYCfL7sVQXE6M73ZGyLIAuMDWymxigreuYUhYZ17dnp88Y3KbYUHo07YAOelZywrgr0/x3AtUDMBU0VjzX5nNAyRC6G1RCn91N1XFw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>136VXl+lpTPRBgyMQyfuPJoMV2bpA0UxxYPA8IKYNbZYsuWFoh8mSKCdkR+ulzsnv3kmlbmQYKLjSIct5NHM5YC6k8KQbgrY0z1gJ6rKuWmqCL/I2KCDP0TMl5sq2HgBtYPEILFPCFHwbOuoBj3oehWmDio8eWk3phnauc93kWM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="de2f04fdb16ccfce5261abd992b9fce66d83d53dbe4708a5819461d9f466ba97" Description="" Url=""><as:assemblyIdentity name="CCBin.exe" version="1.0.0.0" publicKeyToken="35255882d74c51be" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP1\gbroo_000</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/kyd6a84RFNQWiQ4fgbrbhWbtRhLE0U6QwZ8JWiNg8M=</DigestValue></Reference></SignedInfo><SignatureValue>rd6VXgWuy2tvVfYi43I+V9LOA7B7hZ1YudiJ1SDCX9AZgf215w1c+0hk5zCJYZgY9a7oHqRNfgac7VNa/swXnJJyfewmEffyecRtAIW5F99UMrU4PVQ5qVjIqj96JzLaAIQbGwCWYn6+I9YGFgZzZ2vmAXTTwSaCWY4vLoFESac=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>136VXl+lpTPRBgyMQyfuPJoMV2bpA0UxxYPA8IKYNbZYsuWFoh8mSKCdkR+ulzsnv3kmlbmQYKLjSIct5NHM5YC6k8KQbgrY0z1gJ6rKuWmqCL/I2KCDP0TMl5sq2HgBtYPEILFPCFHwbOuoBj3oehWmDio8eWk3phnauc93kWM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQJKAhoo6ucKZASy/lJvEh5DANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATABBAFAAVABPAFAAMQBcAGcAYgByAG8AbwBfADAAMAAwMB4XDTEzMDkwMTE3NTgyOVoXDTE0MDkwMTIzNTgyOVowLTErMCkGA1UEAx4iAEwAQQBQAFQATwBQADEAXABnAGIAcgBvAG8AXwAwADAAMDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA136VXl+lpTPRBgyMQyfuPJoMV2bpA0UxxYPA8IKYNbZYsuWFoh8mSKCdkR+ulzsnv3kmlbmQYKLjSIct5NHM5YC6k8KQbgrY0z1gJ6rKuWmqCL/I2KCDP0TMl5sq2HgBtYPEILFPCFHwbOuoBj3oehWmDio8eWk3phnauc93kWMCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDKo+T+tDQ0Ce4oRT4JK9eD122dMNPiDykVygIbnambaXWd3w2+IcL5h3iSFAczocNfbur4tO4JUtZf0f0lkw0137cMGUJ5Y99014I7Gp2ZNEbr00SNZpGh8FXFyYEHP0M53xQ3YOVCZizrPsPfB7hx63LUTdjxBog8SpgLnUTCSQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

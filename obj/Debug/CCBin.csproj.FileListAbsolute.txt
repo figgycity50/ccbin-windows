@@ -9,3 +9,7 @@ c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\C
 c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.pdb
 c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\Newtonsoft.Json.dll
 c:\users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.exe.manifest
+C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.application
+C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.exe.manifest
+C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.application
