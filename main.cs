@@ -13,14 +13,14 @@ using Newtonsoft.Json;
 
 namespace CCBin
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
-        public Form1()
+        public main()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void main_Load(object sender, EventArgs e)
         {
 
         }
@@ -28,7 +28,7 @@ namespace CCBin
         private void getPaste(object sender, EventArgs e)
         {
             string sURL;
-            sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + toolStripTextBox1.Text;
+            sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + pasteID.Text;
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
             Stream objStream;
@@ -46,7 +46,7 @@ namespace CCBin
             // Set the Method property of the request to POST.
             request.Method = "POST";
             // Create POST data and convert it to a byte array.
-            string postData = "type=make&title=untitled&paste=" + richTextBox1.Text;
+            string postData = "type=make&title=&paste=" + richTextBox1.Text;
             byte[] byteArray = Encoding.UTF8.GetBytes(postData);
             // Set the ContentType property of the WebRequest.
             request.ContentType = "application/x-www-form-urlencoded";
@@ -66,7 +66,7 @@ namespace CCBin
             // Read the content.
             string responseFromServer = reader.ReadToEnd();
             // Display the content.
-            toolStripTextBox1.Text = responseFromServer;
+            pasteID.Text = responseFromServer;
         }
     }
 }
