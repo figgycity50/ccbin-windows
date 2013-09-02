@@ -13,3 +13,17 @@ C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\C
 C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\bin\Debug\CCBin.application
 C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.exe.manifest
 C:\Users\gbroo_000\documents\visual studio 2012\Projects\CCBin\CCBin\obj\Debug\CCBin.application
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\CCBin.exe.config
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.exe
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.pdb
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\CCBin.exe.manifest
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\CCBin.application
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\CCBin.exe
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\CCBin.pdb
+D:\__Egor\Documents\GitHub\ccbin-windows\bin\Debug\Newtonsoft.Json.xml
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.csprojResolveAssemblyReference.cache
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.Properties.Resources.resources
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.csproj.GenerateResource.Cache
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.exe.manifest
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.application
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.main.resources
