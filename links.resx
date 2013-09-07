@@ -117,41 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 16</value>
-  </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Official Forum Thread:
+http://tinyurl.com/ccbin-forumthread
+
+Official Repositories of CCBin:
+https://github.com/figgycity50/ccbin-server
+https://github.com/figgycity50/ccbin-client
+https://github.com/figgycity50/ccbin-windows
+
+Egor305's forks:
+https://github.com/Egor305/ccbin-server
+https://github.com/Egor305/ccbin-client
+https://github.com/Egor305/ccbin-windows
+
+Either or both will be up-to-date versions.
+Also, check out ccbin-simple - rewrite of early client and server versions by Egor305.
+https://github.com/Egor305/ccbin-simple</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="newPasteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGiSURBVDhPlZO/S0JRFMdfzUFLEEJBNERDEaK8lqBdgoaG
-        oCWVfoBODU1NLQlpWcnTgpaGJqcXIWSODY1R0p+g+Pvn83ed7vfmM81n2oEP973HPZ97zrk8oRkTDAND
-        7MMUY5jRFYZSqZRNp9MfjUaDtKhUKuTxeM7ZXk2JiORisUiKorTI5XKUyWQoFotxSTQaJUmSuiRDDBEb
-        yuUyVatVvoJCoUDZbJbi8TgXsCoJh/h8PlXCoyVAsgoESMjn85RIJDraAchp5v4I6vV6awOe0bfaSjKZ
-        5JVEIpHegt+0S1AJ5pFKpQYXAFWCdjATiPB9YAGo1Wp8LpAAfPuXAFUEnv20f2WmndNVshybaMkyc/mn
-        AEkq8tMtHfotdB+W6CUSJPejjdbd8yTada6+ApRvdZpIfjsj+f2CEK7QNrlDu7RgHy33FLRLVg70FAhf
-        82Q17l4lWrTrMItvAbuiTy0JWN6bJmfQSo6gmSc7HswdFSCM7HoUJtH8mbzyEa25ZukkuMVPxop3dQaI
-        SYaRgavRZG5j7Ea0jSgoG6t+c9wrCILwBbivh+Iw5tHHAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>18, 12</value>
-  </metadata>
-  <data name="menuHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMIOAADCDgAAAAAAAAAA
