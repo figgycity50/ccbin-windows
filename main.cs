@@ -22,21 +22,37 @@ namespace CCBin
 
         private void main_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private string readURL(object sender, EventArgs e, string sURL) //returns contents of sURL
+        {
+            WebRequest wrGETURL = WebRequest.Create(sURL);
+            return new StreamReader( wrGETURL.GetResponse().GetResponseStream() ).ReadToEnd();
         }
 
         private void getPaste(object sender, EventArgs e)
         {
-            string sURL;
-            sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + pasteID.Text;
-            WebRequest wrGETURL;
-            wrGETURL = WebRequest.Create(sURL);
-            Stream objStream;
-            objStream = wrGETURL.GetResponse().GetResponseStream();
-            StreamReader pasteStream = new StreamReader(objStream);
-            string paste;
-            paste = pasteStream.ReadToEnd();
-            richTextBox1.Text = paste;
+            string sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + pasteID.Text;
+            richTextBox1.Text = readURL(sender, e, sURL);
+            pasteIDLabel.Text = "Title";
+            /*NotGoodTimes:*/
+            string title = readURL(sender, e, sURL + "&mode=title");
+            if (title == richTextBox1.Text) pasteID.Text = "Outdated Server: figgycity didn't merged Egor's pull request.";
+            else pasteID.Text = title;
+            /**/
+
+            /*GoodTimes:
+            pasteID.Text = readURL(sender, e, sURL + "&mode=title");
+            */
+        }
+
+        public void get(string id, object sender, EventArgs e)
+        {
+            comboBoxMode.Text = "GET";
+            comboBoxMode_TextUpdate(sender, e);
+            pasteID.Text = id;
+            doSomething(sender, e);
         }
 
         private void newPaste(object sender, EventArgs e)
@@ -46,7 +62,7 @@ namespace CCBin
             // Set the Method property of the request to POST.
             request.Method = "POST";
             // Create POST data and convert it to a byte array.
-            string postData = "type=make&title=&paste=" + richTextBox1.Text;
+            string postData = "type=make&title="+ pasteID.Text +"&paste=" + richTextBox1.Text;
             byte[] byteArray = Encoding.UTF8.GetBytes(postData);
             // Set the ContentType property of the WebRequest.
             request.ContentType = "application/x-www-form-urlencoded";
@@ -66,7 +82,101 @@ namespace CCBin
             // Read the content.
             string responseFromServer = reader.ReadToEnd();
             // Display the content.
+            pasteIDLabel.Text = "Paste ID";
             pasteID.Text = responseFromServer;
+        }
+
+        public void put(string title, string contents, object sender, EventArgs e)
+        {
+            comboBoxMode.Text = "GET";
+            comboBoxMode_TextUpdate(sender, e);
+            pasteID.Text = title;
+            richTextBox1.Text = contents;
+            doSomething(sender, e);
+        }
+
+        private void doSomething(object sender, EventArgs e)
+        {
+            if (comboBoxMode.Text.ToLower() == "get") getPaste(sender, e);
+            else if (comboBoxMode.Text.ToLower() == "put") newPaste(sender, e);
+            else MessageBox.Show("Wrong Mode!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void comboBoxMode_TextUpdate(object sender, EventArgs e)
+        {
+            if (comboBoxMode.Text.ToLower() == "get")
+            {
+                pasteIDLabel.Text = "Paste ID";
+                pasteID.MaxLength = 6;
+            }
+            else if (comboBoxMode.Text.ToLower() == "put")
+            {
+                pasteIDLabel.Text = "Title";
+                pasteID.MaxLength = 0;
+            }
+            else
+            {
+                pasteIDLabel.Text = "?????";
+                pasteID.MaxLength = 0;
+            }
+        }
+
+        private void main_Resize(object sender, EventArgs e)
+        {
+            pasteID.Width = 630 + this.Width - 800;
+        }
+
+        /*menuHelp*/
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not yet implemented!", "NYI", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+                private void linksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new links().Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("CCBin for Windows by figgycity50 and Egor305", "About CCBin for Windows", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /*menuFile*/
+        private void getToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new get().setParent(this).Show();
+        }
+        
+        private void putToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new put().setParent(this).Show();
+        }
+
+        private void modeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (comboBoxMode.Text.ToLower() == "put")
+            {
+                comboBoxMode.Text = "GET";
+                comboBoxMode_TextUpdate(sender, e);
+            }
+            else if (comboBoxMode.Text.ToLower() == "get")
+            {
+                comboBoxMode.Text = "PUT";
+                comboBoxMode_TextUpdate(sender, e);
+            }
+            else
+            {
+                comboBoxMode.Text = "PUT";
+                comboBoxMode_TextUpdate(sender, e);
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Environment.Exit(0);
         }
     }
 }
