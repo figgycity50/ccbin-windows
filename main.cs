@@ -36,15 +36,15 @@ namespace CCBin
             string sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + pasteID.Text;
             richTextBox1.Text = readURL(sender, e, sURL);
             pasteIDLabel.Text = "Title";
-            /*NotGoodTimes:*/
+            /*NotGoodTimes:
             string title = readURL(sender, e, sURL + "&mode=title");
             if (title == richTextBox1.Text) pasteID.Text = "Outdated Server: figgycity didn't merged Egor's pull request.";
             else pasteID.Text = title;
             /**/
 
-            /*GoodTimes:
+            /*GoodTimes:*/
             pasteID.Text = readURL(sender, e, sURL + "&mode=title");
-            */
+            /**/
         }
 
         public void get(string id, object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace CCBin
 
         public void put(string title, string contents, object sender, EventArgs e)
         {
-            comboBoxMode.Text = "GET";
+            comboBoxMode.Text = "PUT";
             comboBoxMode_TextUpdate(sender, e);
             pasteID.Text = title;
             richTextBox1.Text = contents;
@@ -130,12 +130,13 @@ namespace CCBin
         /*menuHelp*/
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not yet implemented!", "NYI", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //MessageBox.Show("Not yet implemented!", "NYI", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            new links().setParent(this, "Help", 155, 65).Show();
         }
 
-                private void linksToolStripMenuItem_Click(object sender, EventArgs e)
+        private void linksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new links().Show();
+            new links().setParent(this, "Links", 300, 300).Show();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
