@@ -88,7 +88,7 @@ namespace CCBin
 
         public void put(string title, string contents, object sender, EventArgs e)
         {
-            comboBoxMode.Text = "GET";
+            comboBoxMode.Text = "PUT";
             comboBoxMode_TextUpdate(sender, e);
             pasteID.Text = title;
             richTextBox1.Text = contents;
