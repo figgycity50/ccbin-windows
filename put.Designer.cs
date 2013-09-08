@@ -29,18 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(put));
-            this.label1 = new System.Windows.Forms.Label();
             this.putFileButton = new System.Windows.Forms.Button();
+            this.filePath = new System.Windows.Forms.TextBox();
+            this.browseButton = new System.Windows.Forms.Button();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Not Yet Implemented";
             // 
             // putFileButton
             // 
@@ -52,13 +47,50 @@
             this.putFileButton.UseVisualStyleBackColor = true;
             this.putFileButton.Click += new System.EventHandler(this.putFileButton_Click);
             // 
+            // filePath
+            // 
+            this.filePath.Location = new System.Drawing.Point(12, 12);
+            this.filePath.Name = "filePath";
+            this.filePath.Size = new System.Drawing.Size(179, 20);
+            this.filePath.TabIndex = 2;
+            // 
+            // browseButton
+            // 
+            this.browseButton.Location = new System.Drawing.Point(197, 12);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(75, 23);
+            this.browseButton.TabIndex = 3;
+            this.browseButton.Text = "Browse";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.Location = new System.Drawing.Point(57, 38);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(215, 20);
+            this.titleTextBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Title:";
+            // 
             // put
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 100);
+            this.ClientSize = new System.Drawing.Size(284, 99);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.titleTextBox);
+            this.Controls.Add(this.browseButton);
+            this.Controls.Add(this.filePath);
             this.Controls.Add(this.putFileButton);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -75,7 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button putFileButton;
+        private System.Windows.Forms.TextBox filePath;
+        private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.TextBox titleTextBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

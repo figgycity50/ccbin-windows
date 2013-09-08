@@ -117,24 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Official Forum Thread:
-http://tinyurl.com/ccbin-forumthread
-
-Official Repositories of CCBin:
-https://github.com/figgycity50/ccbin-server
-https://github.com/figgycity50/ccbin-client
-https://github.com/figgycity50/ccbin-windows
-
-Egor305's forks:
-https://github.com/Egor305/ccbin-server
-https://github.com/Egor305/ccbin-client
-https://github.com/Egor305/ccbin-windows
-
-Either or both will be up-to-date versions.
-Also, check out ccbin-simple - rewrite of early client and server versions by Egor305.
-https://github.com/Egor305/ccbin-simple</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -159,5 +141,23 @@ https://github.com/Egor305/ccbin-simple</value>
         Nv8yMjL/AAAAAAAAAAAAAAAAAAAAAAAAAAAf/wAAH/8AAB//AAAf/wAAH/8AAB//AAAf/wAAH/8AAAAA
         AAAAAAAAAAAAAA==
 </value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help is not yet implemented</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Official Repositories of CCBin:
+https://github.com/figgycity50/ccbin-server
+https://github.com/figgycity50/ccbin-client
+https://github.com/figgycity50/ccbin-windows
+
+Egor305's forks:
+https://github.com/Egor305/ccbin-server
+https://github.com/Egor305/ccbin-client
+https://github.com/Egor305/ccbin-windows
+
+Either or both will be up-to-date versions.
+Also, check out ccbin-simple - rewrite of early client and server versions by Egor305.
+https://github.com/Egor305/ccbin-simple</value>
   </data>
 </root>

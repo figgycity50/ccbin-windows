@@ -26,9 +26,18 @@ namespace CCBin
        
         private void putFileButton_Click(object sender, EventArgs e)
         {
-            //TODO: Code for reading file//
-            //parent.put(title, contents, sender, e)
+            System.IO.StreamReader sr = new System.IO.StreamReader(filePath.Text);
+            parent.put(titleTextBox.Text, sr.ReadToEnd(), sender, e);
+            sr.Close();
             this.Close();
+        }
+
+        private void browseButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                filePath.Text = openFileDialog1.FileName;
+            }
         }
     }
 }
