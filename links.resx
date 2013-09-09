@@ -143,7 +143,20 @@
 </value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Help is not yet implemented</value>
+    <value>Welcome to CCBin for Windows Help. 
+
+How-to PUT:
+There's 2 ways to PUT your paste - Main UI or Put File UI
+
+To put paste via Main UI - select PUT mode, paste your paste in big textbox and Type title in title text box. After that is done, you ready to put your paste. Press Get/Put paste button. After that is done, you will recive your paste ID in paste ID/title text box.
+
+To put paste via Put File UI - Select at toolbar:  File -&gt; Put File. Select file, Enter title, Press OK, and as wth Main UI, get your ID at paste ID text box.
+
+How to GET: As with put, there's 2 ways: Main UI or Get UI
+
+To get paste via Main UI - select GET mode, enter Paste ID in paste ID text box, press Get/Put paste button. Title is in title text box. Contents of paste is in big text box.
+
+To get paste via Get UI - Select at toolbar: File -&gt; Get Paste. Enter ID, and press OK. Get your contents and title same way as with Main UI </value>
   </data>
   <data name="Links" xml:space="preserve">
     <value>Official Repositories of CCBin:

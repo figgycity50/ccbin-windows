@@ -38,6 +38,8 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.menuFile = new System.Windows.Forms.ToolStripDropDownButton();
             this.getToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.putToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.modeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getPutPasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +48,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.linksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.putToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +76,7 @@
             this.newPasteButton.Name = "newPasteButton";
             this.newPasteButton.Size = new System.Drawing.Size(23, 22);
             this.newPasteButton.Text = "toolStripButton1";
-            this.newPasteButton.ToolTipText = "Upload Paste";
+            this.newPasteButton.ToolTipText = "Get/Put Paste";
             this.newPasteButton.Click += new System.EventHandler(this.doSomething);
             // 
             // comboBoxMode
@@ -156,6 +156,18 @@
             this.getToolStripMenuItem.Text = "&Get Paste";
             this.getToolStripMenuItem.Click += new System.EventHandler(this.getToolStripMenuItem_Click);
             // 
+            // putToolStripMenuItem
+            // 
+            this.putToolStripMenuItem.Name = "putToolStripMenuItem";
+            this.putToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.putToolStripMenuItem.Text = "Put File";
+            this.putToolStripMenuItem.Click += new System.EventHandler(this.putToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
             // modeToolStripMenuItem
             // 
             this.modeToolStripMenuItem.Name = "modeToolStripMenuItem";
@@ -217,18 +229,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // putToolStripMenuItem
-            // 
-            this.putToolStripMenuItem.Name = "putToolStripMenuItem";
-            this.putToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.putToolStripMenuItem.Text = "Put File";
-            this.putToolStripMenuItem.Click += new System.EventHandler(this.putToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // main
             // 

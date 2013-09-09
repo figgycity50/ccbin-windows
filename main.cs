@@ -130,8 +130,7 @@ namespace CCBin
         /*menuHelp*/
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Not yet implemented!", "NYI", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            new links().setParent(this, "Help", 155, 65).Show();
+            new links().setParent(this, "Help", 400, 350).Show();
         }
 
         private void linksToolStripMenuItem_Click(object sender, EventArgs e)
