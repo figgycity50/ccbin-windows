@@ -15,6 +15,7 @@ namespace CCBin
 {
     public partial class main : Form
     {
+        public string sBaseUrl = "http://www.ccbin.co.nf/"; //Old URL http://figgycity50.kd.io/ccbin/
         public main()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace CCBin
 
         private void getPaste(object sender, EventArgs e)
         {
-            string sURL = "http://figgycity50.kd.io/ccbin/raw.php?id=" + pasteID.Text;
+            string sURL = sBaseUrl + "raw.php?id=" + pasteID.Text;
             richTextBox1.Text = readURL(sender, e, sURL);
             pasteIDLabel.Text = "Title";
             /*NotGoodTimes:
@@ -58,7 +59,7 @@ namespace CCBin
         private void newPaste(object sender, EventArgs e)
         {
             // Create a request using a URL that can receive a post. 
-            WebRequest request = WebRequest.Create("http://figgycity50.kd.io/ccbin/api.php");
+            WebRequest request = WebRequest.Create(sBaseUrl + "api.php");
             // Set the Method property of the request to POST.
             request.Method = "POST";
             // Create POST data and convert it to a byte array.
