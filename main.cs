@@ -15,10 +15,23 @@ namespace CCBin
 {
     public partial class main : Form
     {
-        public string sBaseUrl = "http://www.ccbin.co.nf/"; //Old URL http://figgycity50.kd.io/ccbin/
+        public DateTime time = DateTime.Now;
+        public string sBaseUrl = "http://www.ccbin.tk/"; //Old URL http://www.ccbin.co.nf/ //Old URL http://figgycity50.kd.io/ccbin/
         public main()
         {
             InitializeComponent();
+            switch(time.DayOfYear)
+            {
+                
+                case 256:
+                    MessageBox.Show("Happy Programmers Day!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case 1:
+                case 365:
+                case 366:
+                    MessageBox.Show("Happy New Year!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+            }
         }
 
         private void main_Load(object sender, EventArgs e)
