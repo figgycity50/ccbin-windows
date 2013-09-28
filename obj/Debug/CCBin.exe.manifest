@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CCBin.exe" size="30720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CCBin.exe" size="37376">
       <assemblyIdentity name="CCBin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5fUdh5li52/zHiIK0ZzwjJXmyeiv+R0DSVF6fjlUO9E=</dsig:DigestValue>
+        <dsig:DigestValue>JaRlvlKvODhgU4rydIs+axZTDR1lJOkKQPHfhNGEWZ8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

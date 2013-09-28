@@ -84,6 +84,12 @@
     <Compile Include="get.Designer.cs">
       <DependentUpon>get.cs</DependentUpon>
     </Compile>
+    <Compile Include="hosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hosting.Designer.cs">
+      <DependentUpon>hosting.cs</DependentUpon>
+    </Compile>
     <Compile Include="links.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="get.resx">
       <DependentUpon>get.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hosting.resx">
+      <DependentUpon>hosting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="links.resx">
       <DependentUpon>links.cs</DependentUpon>
