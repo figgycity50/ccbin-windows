@@ -15,34 +15,62 @@ namespace CCBin
 {
     public partial class main : Form
     {
-        public DateTime time = DateTime.Now;
-        public string sBaseUrl = "http://www.ccbin.tk/"; //Old URL http://www.ccbin.co.nf/ //Old URL http://figgycity50.kd.io/ccbin/
+        public static DateTime time = DateTime.Now;
+        public int isLeap = Convert.ToInt32(DateTime.IsLeapYear(time.Year));
+        public string verName = "1.2";
+        public int ver = 8;
+        public string sBaseUrl = "https://blaizecraft.com/ccbin/"; //http://www.ccbin.tk/ http://www.ccbin.co.nf/ http://figgycity50.kd.io/ccbin///
+
         public main()
         {
             InitializeComponent();
-            switch(time.DayOfYear)
-            {
-                
-                case 256:
-                    MessageBox.Show("Happy Programmers Day!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    break;
-                case 1:
-                case 365:
-                case 366:
-                    MessageBox.Show("Happy New Year!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    break;
-            }
         }
 
         private void main_Load(object sender, EventArgs e)
         {
-            
+            if (time.DayOfYear == 311 + isLeap) MessageBox.Show("Happy Cake Day, Egor!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+          //else if (time.DayOfYear == "When is Your birthday?" + isLeap) MessageBox.Show("Happy Cake Day, figgy!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if (time.DayOfYear == 256) MessageBox.Show("Happy Programmers Day!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if (time.DayOfYear == 1 || time.DayOfYear == 365 + isLeap) MessageBox.Show("Happy New Year!", "YAY!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            checkUpdate(sender, e);
+        }
+
+        private void checkUpdate(object sender, EventArgs e)
+        {
+            string figgyVer = readURL(sender, e,"https://raw.github.com/figgycity50/ccbin-windows/master/version");
+            string egorVer = readURL(sender,e,"https://raw.github.com/Egor305/ccbin-windows/master/version");
+            do{
+                if (Convert.ToInt32(figgyVer) == 0) { MessageBox.Show("There's a problem checking figgycity50's repository!", "Oops! Can't check for updates!", MessageBoxButtons.OK, MessageBoxIcon.Error); break; }
+                if (Convert.ToInt32(egorVer) == 0) { MessageBox.Show("There's a problem checking Egor305's repository!", "Oops! Can't check for updates!", MessageBoxButtons.OK, MessageBoxIcon.Error); break; }
+                
+                string figgyVerName = readURL(sender, e, "https://raw.github.com/figgycity50/ccbin-windows/master/versionname");
+                string egorVerName = readURL(sender, e, "https://raw.github.com/Egor305/ccbin-windows/master/versionname");
+
+                if( Convert.ToInt32(figgyVer) > Convert.ToInt32(egorVer) && (Convert.ToInt32(figgyVer) > ver) )
+                  MessageBox.Show("You have outdated version! ("+ verName +")\n You can get new version ("+ figgyVerName +") at figgycity50/ccbin-windows repository at GitHub (More info in Menu>Help>Links)",
+                         "Outdated Version!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                if( Convert.ToInt32(figgyVer) < Convert.ToInt32(egorVer) && (Convert.ToInt32(egorVer) > ver) )
+                    MessageBox.Show("You have outdated version! ("+ verName +")\n You can get new version ("+ egorVerName +") at Egor305/ccbin-windows repository at GitHub (More info in Menu>Help>Links)",
+                        "Outdated Version!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                if( Convert.ToInt32(figgyVer) == Convert.ToInt32(egorVer) && (Convert.ToInt32(figgyVer) > ver) )
+                    MessageBox.Show("You have outdated version! ("+ verName +")\n You can get new version ("+ figgyVerName +") at figgycity50/ccbin-windows or Egor305/ccbin-windows repository at GitHub (More info in Menu>Help>Links)",
+                        "Outdated Version!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }while(false);
         }
 
         private string readURL(object sender, EventArgs e, string sURL) //returns contents of sURL
         {
-            WebRequest wrGETURL = WebRequest.Create(sURL);
-            return new StreamReader( wrGETURL.GetResponse().GetResponseStream() ).ReadToEnd();
+            try
+            {
+                WebRequest wrGETURL = WebRequest.Create(sURL);
+                return new StreamReader(wrGETURL.GetResponse().GetResponseStream()).ReadToEnd();
+            }
+            catch (System.Net.WebException)
+            {
+                MessageBox.Show("Something wrong with internet! System.Net.WebException! Maybe that was 404?",
+                    "Oops! I catched an System.Net.WebException!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return "0"; //just in case
+            }
         }
 
         private void getPaste(object sender, EventArgs e)
@@ -154,7 +182,7 @@ namespace CCBin
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("CCBin for Windows by figgycity50 and Egor305", "About CCBin for Windows", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("CCBin for Windows by figgycity50 and Egor305\nVersion: "+ verName, "About CCBin for Windows", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /*menuFile*/
@@ -166,6 +194,11 @@ namespace CCBin
         private void putToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new put().setParent(this).Show();
+        }
+        
+        private void toolStripSeparator2_Click(object sender, EventArgs e)
+        {
+            new hosting().setParent(this).Show();
         }
 
         private void modeToolStripMenuItem_Click(object sender, EventArgs e)

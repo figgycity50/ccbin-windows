@@ -30,3 +30,4 @@ D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.main.resources
 D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.links.resources
 D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.get.resources
 D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.put.resources
+D:\__Egor\Documents\GitHub\ccbin-windows\obj\Debug\CCBin.hosting.resources
